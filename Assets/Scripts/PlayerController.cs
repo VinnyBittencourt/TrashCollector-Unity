@@ -36,8 +36,8 @@ public class PlayerController : MonoBehaviour
 
     public void AdicionarForca()
     {
-        h = Input.GetAxis("horizontal") * 2;
-        v = Input.GetAxis("vertical");
+        h = Input.GetAxis("Horizontal") * 2;
+        v = Input.GetAxis("Vertical");
 
         if(v > 0)
         {
