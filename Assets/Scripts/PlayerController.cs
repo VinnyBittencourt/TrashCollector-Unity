@@ -36,12 +36,12 @@ public class PlayerController : MonoBehaviour
 
     public void AdicionarForca()
     {
-        h = Input.GetAxis("Horizontal") * 2;
-        v = Input.GetAxis("Vertical");
+        h = Input.GetAxisRaw("Horizontal") * 2;
+        v = Input.GetAxisRaw("Vertical");
 
         if(v > 0)
         {
-            transform.Translate(new Vector3(0, 0, v / divisorDeForca));
+            transform.Translate(new Vector3(0, 0, v/divisorDeForca));
         }
 
         if(h > 0)
